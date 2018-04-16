@@ -8,6 +8,9 @@ import { AccountingComponent } from './accounting/accounting.component';
 import { CountComponent } from './count/count.component';
 import { CountYearComponent } from './count/count-year/count-year.component';
 import { CountMonthComponent } from './count/count-month/count-month.component';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
+import {WeUIModule} from 'angular-weui';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { CountMonthComponent } from './count/count-month/count-month.component';
     CountMonthComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    WeUIModule
   ],
   providers: [],
   bootstrap: [AppComponent]
